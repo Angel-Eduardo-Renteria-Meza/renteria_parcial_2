@@ -7,9 +7,9 @@ function App() {
   const [formData, setFormData] = useState({ email: '', password: '' });
   const navigate = useNavigate()
   const credenciales = {
-    correo: "admin@admin.com",
-    user: "admin",
-    password: "admin"
+    correo: "examen_parcial2@gmail.com",
+    user: "examen_parcial2",
+    password: "Voyporel100"
   };
 
   function login(event) {
@@ -31,7 +31,7 @@ function App() {
 
   return (
     <>
-    <p>email: admin@admin.com password: admin</p>
+    <p>email: {credenciales.correo} o {credenciales.user} password: {credenciales.password}</p>
       <section className="bg-gray-50 dark:bg-gray-900">
         <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
           <a href="#" className="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
@@ -51,7 +51,7 @@ function App() {
                     name="email"
                     id="email"
                     className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                    placeholder="name@company.com"
+                    placeholder="ingrese email o username"
                     required=""
                     onChange={handleChange}
                     value={formData.email}
